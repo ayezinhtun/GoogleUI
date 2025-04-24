@@ -354,7 +354,6 @@
         const toggleMore = document.getElementById("toggleMore");
         const toggleIcon = document.getElementById("toggleIcon");
         const toggleText = document.getElementById("toggleText");
-        const darkToggle = document.getElementById("darkToggle");
         const toolbar = document.querySelector(".toolbar");
         const inboxScroll = document.querySelector(".inbox-scroll");
         const checkbox = document.getElementById('masterCheckbox');
@@ -427,11 +426,7 @@
             toggleIcon.className = isHidden ? "bi bi-chevron-down" : "bi bi-chevron-up";
         });
 
-        darkToggle.addEventListener("click", () => {
-            document.documentElement.setAttribute("data-theme",
-                document.documentElement.getAttribute("data-theme") === "light" ? "dark" : "light"
-            );
-        });
+       
     </script>
 
 </body>
